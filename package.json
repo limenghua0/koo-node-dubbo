@@ -1,0 +1,28 @@
+{
+  "name": "koo-node-dubbo",
+  "version": "1.0.0",
+  "description": "node connect dubbo by default protocol in zookeeper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "zookeeper",
+    "node",
+    "dubbo",
+    "javascript"
+  ],
+  "author": "limenghua",
+  "license": "ISC",
+  "dependencies": {
+    "hessian.js": "^2.1.8",
+    "node-zookeeper-client": "0.2.2"
+  },
+  "jscsConfig": {
+    "preset": "node-style-guide",
+    "validateQuoteMarks": null
+  },
+  "devDependencies": {
+    "chai": "^3.4.1"
+  }
+}
