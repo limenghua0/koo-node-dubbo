@@ -1,6 +1,6 @@
 {
   "name": "koo-node-dubbo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "node connect dubbo by default protocol in zookeeper",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,10 @@
     "dubbo",
     "javascript"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/limenghua0/koo-node-dubbo"
+  },
   "author": "limenghua",
   "license": "ISC",
   "dependencies": {

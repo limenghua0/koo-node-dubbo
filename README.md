@@ -1,7 +1,9 @@
 # koo-node-dubbo
 nodejs通过dubbo默认协议通信,参照node-zookeeper-dubbo版本2.2.2
 
-1.解决Not fund exported service的问题,dubbo提供的provides里的有2个bean,dubbo会自动把第2个bean加上2，导致service name的interface和provider url的interface不一致
+1.解决Not found exported service的问题
+
+    dubbo提供的provides里的有2个bean,dubbo会自动把第2个bean加上2，导致service name的interface和provider url的interface不一致
 
 2.node-zookeeper-dubbo的3.x版本有好多bug，已知bug：
 
