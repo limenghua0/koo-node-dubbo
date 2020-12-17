@@ -103,8 +103,10 @@ Service.prototype._find = function (path, that, cb) {
       zoo = qs.parse(decodeURIComponent(children[i]));
       if (zoo.version === self._version && zoo.group === self._group) {
         const paths = url.parse(Object.keys(zoo)[0])
-        that._encodeParam._interface = paths.pathname.substr(1);
         self._hosts.push(paths.host);
+        if (that) {
+          that._encodeParam._interface = paths.pathname.substr(1);
+        }
         const methods = zoo.methods.split(',');
         for (let i = 0, l = methods.length; i < l; i++) {
           self[methods[i]] = (function (method) {
