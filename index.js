@@ -158,6 +158,7 @@ Service.prototype._execute = function (method, args) {
     });
 
     client.on('error', function (err) {
+      console.log('err', err)
       return reject('service not available, pls try later');
       // self._flush(function () {
       //   host = self._hosts[Math.random() * self._hosts.length | 0].split(':');
