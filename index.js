@@ -100,6 +100,9 @@ Service.prototype._find = function (path, that, cb) {
     }
 
     for (let i = 0, l = children.length; i < l; i++) {
+      if (!children[i].startWith('dubbo')) {
+        continue;
+      }
       zoo = qs.parse(decodeURIComponent(children[i]));
       if (zoo.version === self._version && zoo.group === self._group) {
         const paths = url.parse(Object.keys(zoo)[0])
