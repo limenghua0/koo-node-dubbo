@@ -100,7 +100,7 @@ Service.prototype._find = function (path, that, cb) {
     }
 
     for (let i = 0, l = children.length; i < l; i++) {
-      if (!children[i].startWith('dubbo')) {
+      if (!children[i].startsWith('dubbo')) {
         continue;
       }
       zoo = qs.parse(decodeURIComponent(children[i]));
